@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Civi Tech Lab | 首页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="记录计算机技术、大模型实践与数字检察随笔的个人站点。"
+  />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">Civi Tech Lab</span>
+      </div>
+      <nav class="nav">
+        <a href="#hero">首页</a>
+        <a href="#notes">技术随笔</a>
+        <a href="#features">项目</a>
+        <a href="#blog">长文</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 首屏 Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>记录计算机与大模型时代的碎片灵感</h1>
+        <p>
+          从容器化部署、数据库迁移，到大模型在司法实务中的落地探索——
+          这里是你的技术实验室与思考笔记本。
+        </p>
+        <div class="hero-actions">
+          <a href="#notes" class="btn primary">开始阅读随笔</a>
+          <a href="#features" class="btn ghost">查看项目清单</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-stat">
+          <h2>AI / Dev / Law</h2>
+          <p>专注交叉领域的实践与复盘</p>
+        </div>
+        <ul class="hero-list">
+          <li>🧠 大模型应用实验</li>
+          <li>📦 Docker & DevOps 记录</li>
+          <li>📊 数据与风险评估工具</li>
+          <li>⚖️ 数字检察与司法科技</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技术随笔（类似 Gallery 区域） -->
+  <section id="notes" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>技术随笔 · Tech Notes</h2>
+        <p>短内容、随手记，偏工程实践与踩坑记录。</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-tag">容器化</div>
+          <h3>从 8GB 镜像到精简镜像：一次 Docker 减肥实录</h3>
+          <p>
+            记录如何分析镜像体积、拆分依赖、利用多阶段构建，
+            把臃肿的实验环境压缩到可上线的体量。
+          </p>
+          <span class="card-meta">最近更新 · DevOps Notes</span>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">大模型</div>
+          <h3>问卷风控引擎 3.0：规则 + GBDT 双引擎的组合拳</h3>
+          <p>
+            基于历史问卷数据自动校准权重，
+            结合机器学习模型捕捉“家庭差 + 同伴差 = 爆炸性风险”这类非线性关系。
+          </p>
+          <span class="card-meta">算法实验 · Risk Engine</span>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">脚本</div>
+          <h3>一键脚本的边界：从课堂实验到生产环境</h3>
+          <p>
+            讨论通用脚本设计的安全边界、参数化、日志与回滚，
+            以及“只是课堂学习用脚本”和“正式运维工具”的区别。
+          </p>
+          <span class="card-meta">Shell / Python · Ops</span>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">数据库</div>
+          <h3>MySQL → GaussDB 迁移过程中的几个坑</h3>
+          <p>
+            围绕权限、SQL 兼容性和性能，整理一次真实迁移中的经验与教训，
+            以及 UGO 工具链在其中的作用。
+          </p>
+          <span class="card-meta">Data Infra · Migration</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 项目列表（类似 Features / Gallery） -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>在做的项目 · Projects</h2>
+        <p>更偏“可运行的东西”，不是纯概念。</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h3>🧩 青少年风险动态评估系统</h3>
+          <p>
+            基于问卷数据和风险评分引擎，为一线办案人员提供可视化风险画像，
+            支撑分级干预与精准预防。
+          </p>
+          <ul>
+            <li>Streamlit + Docker 部署</li>
+            <li>规则引擎 + GBDT 模型</li>
+            <li>JSON 配置化题库与权重</li>
+          </ul>
+        </div>
+
+        <div class="feature-item">
+          <h3>📚 Civi Wiki</h3>
+          <p>
+            个人知识库，用于整理计算机基础、后端技巧、大模型应用案例，
+            以及实习期间的制度与流程笔记。
+          </p>
+          <ul>
+            <li>基于 GitHub + Cloudflare Pages</li>
+            <li>Markdown 文档驱动</li>
+            <li>支持全文搜索与标签</li>
+          </ul>
+        </div>
+
+        <div class="feature-item">
+          <h3>⚙️ 运维脚本与工具箱</h3>
+          <p>
+            收集日常使用的 Bash / Python 脚本：从日志分析、批量任务，到实验环境一键搭建。
+          </p>
+          <ul>
+            <li>Docker 环境初始化脚本</li>
+            <li>简单监控与告警脚本</li>
+            <li>实验项目的启动/停止工具</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 博客 / 长文区域（类似 What's new 列表） -->
+  <section id="blog" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>长文与深度思考 · Blog</h2>
+        <p>更系统、更完整的文章，适合慢慢读。</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">
+            <span class="day">27</span>
+            <span class="month">May 2025</span>
+          </div>
+          <div class="timeline-content">
+            <h3>未成年人犯罪预防的“数字共治”模式构想</h3>
+            <p>
+              从“技术赋能 + 法律规制”双重视角，思考检察机关在数字时代如何参与
+              未成年人犯罪预防的多方协同治理。
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">
+            <span class="day">18</span>
+            <span class="month">Nov 2025</span>
+          </div>
+          <div class="timeline-content">
+            <h3>风险评分不是“神判官”：如何避免技术滥用</h3>
+            <p>
+              探讨量化风险工具在司法场景中的边界，强调“辅助决策”而非替代，
+              并讨论透明度与可解释性的设计原则。
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">
+            <span class="day">01</span>
+            <span class="month">Dec 2025</span>
+          </div>
+          <div class="timeline-content">
+            <h3>大模型进入办案一线之前，我们需要先回答的几个问题</h3>
+            <p>
+              包括隐私保护、模型幻觉、责任划分以及系统评估，
+              尝试给出一套最低限度的“上线前 checklist”。
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系区域 -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>联系与反馈 · Contact</h2>
+        <p>可以用来放邮箱、GitHub、或者简单表单。</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <h3>找到我</h3>
+          <ul class="contact-list">
+            <li>📮 Email：<span>you@example.com</span></li>
+            <li>💻 GitHub：<span>github.com/your-name</span></li>
+            <li>📄 实验项目说明书、论文链接等以后也可以放在这里。</li>
+          </ul>
+        </div>
+        <div>
+          <h3>简单留言</h3>
+          <!-- 这里只是静态表单，不会真的提交，可以后面接第三方服务 -->
+          <form class="contact-form">
+            <input type="text" placeholder="称呼 / Name" required />
+            <input type="email" placeholder="邮箱 / Email（可选）" />
+            <textarea rows="4" placeholder="想说的话 / Message"></textarea>
+            <button type="submit" class="btn primary" disabled>
+              暂不支持直接提交（静态展示）
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Civi Tech Lab. All rights reserved.</span>
+      <span class="footer-right">Powered by GitHub &amp; Cloudflare Pages</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // 简单设置当前年份
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
